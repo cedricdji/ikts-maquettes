@@ -11,34 +11,67 @@
 body{margin:0;background:#F3F5F7}
 a{color:#1F6FA8}a:hover{color:#1B4F8A}
 </style>
+<link rel="stylesheet" href="assets/site.css">
 </head>
-<body>
+<body class="theme-light" id="top">
 <div style="position:sticky;top:0;z-index:50;background:#0B0D10;color:#C9D1DA;font:600 13px/1.4 Inter,system-ui,sans-serif;padding:10px 16px;display:flex;flex-wrap:wrap;gap:8px 24px;align-items:center;justify-content:center"><a href="index.html" style="color:#fff;text-decoration:none">← Propositions IKTS</a><a href="a-clarte.html" style="color:#C9D1DA;text-decoration:none">A · Clarté</a><a href="b-impact.html" style="color:#C9D1DA;text-decoration:none">B · Impact</a><a href="c-express.html" style="color:#fff;font-weight:700;text-decoration:underline">C · Express</a><span style="opacity:.7">Maquette — contenus provisoires</span></div>
 <div style="font-family: Inter, system-ui, sans-serif; color: #2B2F36; background: #F3F5F7; font-size: 16px; line-height: 1.6">
 
 <div style="background: #2B2F36; color: #E3E7EB; font-size: 13px">
 <div style="max-width: 1240px; margin: 0 auto; padding: 8px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px">
-<span>Lun–ven 8h00–17h30 · Permanence 07 78 78 49 38</span>
-<span>infos@ikts.net · <strong style="color: #FFFFFF">FR</strong> | EN</span>
+<span>🕗 Lun–ven 8h00–17h30 · 📞 Permanence <a href="tel:+2250778784938" style="color: #FFFFFF">07 78 78 49 38</a></span>
+<span>✉️ infos@ikts.net · <strong style="color: #FFFFFF">FR</strong> | EN</span>
 </div>
 </div>
 
 <header style="background: #FFFFFF; box-shadow: 0 1px 0 #E3E7EB">
 <div style="max-width: 1240px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
-<a href="#" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #2B2F36">
+<a href="#top" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #2B2F36">
 <svg width="32" height="32" viewBox="0 0 36 36" aria-hidden="true"><polygon points="6,4 22,4 30,18 14,18" fill="#2E8BC9"></polygon><polygon points="6,32 22,32 30,18 14,18" fill="#1B4F8A"></polygon></svg>
 <span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 30px">IKTS</span>
 </a>
-<nav aria-label="Menu principal" style="display: flex; flex-wrap: wrap; gap: 24px; font-size: 15px; font-weight: 500">
-<a href="#" style="color: #2B2F36; text-decoration: none">Qui sommes-nous</a>
-<a href="#" style="color: #2B2F36; text-decoration: none">Services</a>
-<a href="#" style="color: #2B2F36; text-decoration: none">Références</a>
-<a href="#" style="color: #2B2F36; text-decoration: none">Ressources</a>
-<a href="#" style="color: #2B2F36; text-decoration: none">Contact</a>
-</nav>
+<button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu" onclick="var n=document.getElementById('menu');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">☰ Menu</button>
+<ul class="nav" id="menu" aria-label="Menu principal" style="font-size: 15px; font-weight: 500">
+<li><a class="top" href="#top" style="color: #1B4F8A; font-weight: 600">Accueil</a>
+</li>
+<li><a class="top" href="#a-propos" style="color: #2B2F36">Qui sommes-nous <span class="caret" aria-hidden="true">▼</span></a>
+<ul class="sub">
+<li><a href="bientot.html?p=Notre%20histoire">Notre histoire<span class="soon">bientôt</span></a></li>
+<li><a href="#a-propos">Agrément et engagements</a></li>
+<li><a href="bientot.html?p=Comment%20nous%20travaillons">Comment nous travaillons<span class="soon">bientôt</span></a></li>
+<li><a href="bientot.html?p=Chiffres%20cl%C3%A9s">Chiffres clés<span class="soon">bientôt</span></a></li>
+</ul>
+</li>
+<li><a class="top" href="#profils" style="color: #2B2F36">Services <span class="caret" aria-hidden="true">▼</span></a>
+<ul class="sub">
+<li><a href="bientot.html?p=Commissionnaire%20en%20douane">🛃 Commissionnaire en douane<span class="soon">bientôt</span></a></li>
+<li><a href="bientot.html?p=Fret%20a%C3%A9rien%20et%20maritime">✈️ Fret aérien et maritime<span class="soon">bientôt</span></a></li>
+<li><a href="bientot.html?p=Logistique%20et%20transport%20routier">🚚 Logistique et transport routier<span class="soon">bientôt</span></a></li>
+<li><a href="bientot.html?p=Notre%20flotte">Notre flotte<span class="soon">bientôt</span></a></li>
+</ul>
+</li>
+<li><a class="top" href="#references" style="color: #2B2F36">Références <span class="caret" aria-hidden="true">▼</span></a>
+<ul class="sub">
+<li><a href="#references">Nos clients</a></li>
+<li><a href="bientot.html?p=%C3%89tudes%20de%20cas">Études de cas<span class="soon">bientôt</span></a></li>
+<li><a href="bientot.html?p=T%C3%A9moignages">Témoignages<span class="soon">bientôt</span></a></li>
+</ul>
+</li>
+<li><a class="top" href="#documents" style="color: #2B2F36">Ressources <span class="caret" aria-hidden="true">▼</span></a>
+<ul class="sub">
+<li><a href="#documents">📄 Documents à préparer</a></li>
+<li><a href="#faq">❓ Questions fréquentes</a></li>
+<li><a href="#suivi">📦 Suivi de dossier</a></li>
+<li><a href="bientot.html?p=Glossaire%20douane">Glossaire douane<span class="soon">bientôt</span></a></li>
+<li><a href="bientot.html?p=Actualit%C3%A9s">Actualités<span class="soon">bientôt</span></a></li>
+</ul>
+</li>
+<li><a class="top" href="#contact" style="color: #2B2F36">Contact</a>
+</li>
+</ul>
 <div style="display: flex; gap: 10px">
 <a href="https://wa.me/2250778784938" style="background: #1E8E4F; color: #FFFFFF; text-decoration: none; padding: 11px 16px; border-radius: 999px; font-weight: 600; font-size: 14px; display: flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.5 7.8L3 21l1.2-4.5A9 9 0 1 1 21 12z"></path></svg>WhatsApp</a>
-<a href="#" style="background: #1F6FA8; color: #FFFFFF; text-decoration: none; padding: 11px 18px; border-radius: 999px; font-weight: 600; font-size: 14px">Devis</a>
+<a href="#devis" style="background: #1F6FA8; color: #FFFFFF; text-decoration: none; padding: 11px 18px; border-radius: 999px; font-weight: 600; font-size: 14px">Devis</a>
 </div>
 </div>
 </header>
@@ -50,14 +83,14 @@ a{color:#1F6FA8}a:hover{color:#1B4F8A}
 <h1 style="margin: 0 0 20px; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 60px; line-height: 1.02; text-transform: uppercase">Dédouanez et livrez vos marchandises, sans perdre de temps</h1>
 <p style="margin: 0 0 28px; font-size: 18px; color: #5B636E">Douane, fret aérien et maritime, transport routier : obtenez votre devis en 3 étapes.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 20px; font-size: 14px; font-weight: 600; color: #2B2F36">
-<span style="display: flex; align-items: center; gap: 6px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E8E4F" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg>Réponse sous 24 h</span>
+<span style="display: flex; align-items: center; gap: 6px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E8E4F" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg>⏱️ Réponse sous 24 h</span>
 <span style="display: flex; align-items: center; gap: 6px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E8E4F" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg>Interlocuteur dédié</span>
 <span style="display: flex; align-items: center; gap: 6px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E8E4F" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg>Flotte propre</span>
 </div>
-<div style="margin-top: 32px; height: 200px; border-radius: 12px; background: #DCE8F2; display: flex; align-items: center; justify-content: center; color: #1B4F8A; font-size: 13px">[Photo : équipe IKTS au port]</div>
+<img src="img/port-2.jpg" alt="Activité de déchargement au port d'Abidjan" style="display: block; margin-top: 32px; width: 100%; height: 260px; object-fit: cover; border-radius: 12px">
 </div>
 
-<form style="flex: 1 1 420px; background: #FFFFFF; border: 1px solid #DDE2E7; border-radius: 16px; padding: 32px; box-shadow: 0 12px 32px rgba(27,79,138,0.12); display: flex; flex-direction: column; gap: 20px">
+<form id="devis" style="flex: 1 1 420px; background: #FFFFFF; border: 1px solid #DDE2E7; border-radius: 16px; padding: 32px; box-shadow: 0 12px 32px rgba(27,79,138,0.12); display: flex; flex-direction: column; gap: 20px">
 <div style="display: flex; justify-content: space-between; align-items: center">
 <h2 style="margin: 0; font-size: 22px">Votre devis gratuit</h2>
 <span style="font-size: 13px; color: #5B636E">Étape 1 sur 3</span>
@@ -78,19 +111,34 @@ a{color:#1F6FA8}a:hover{color:#1B4F8A}
 </div>
 </section>
 
-<section style="max-width: 1240px; margin: 0 auto; padding: 80px 24px">
+<section id="profils" style="max-width: 1240px; margin: 0 auto; padding: 80px 24px">
 <h2 style="margin: 0 0 32px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 40px; text-transform: uppercase">Vous êtes…</h2>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px">
-<a href="#" style="background: #FFFFFF; border-radius: 12px; padding: 28px; text-decoration: none; color: #2B2F36; border: 1px solid #E3E7EB"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1F6FA8" stroke-width="2" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="1"></rect><path d="M8 7V4h8v3"></path></svg><h3 style="margin: 12px 0 6px; font-size: 19px">Une entreprise qui importe ou exporte</h3><p style="margin: 0 0 12px; color: #5B636E; font-size: 15px">Dédouanement rapide, sans pénalité, avec un suivi par dossier.</p><span style="color: #1F6FA8; font-weight: 600">Nos services entreprises →</span></a>
-<a href="#" style="background: #FFFFFF; border-radius: 12px; padding: 28px; text-decoration: none; color: #2B2F36; border: 1px solid #E3E7EB"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1F6FA8" stroke-width="2" aria-hidden="true"><path d="M3 11l9-7 9 7v9H3z"></path><path d="M9 20v-6h6v6"></path></svg><h3 style="margin: 12px 0 6px; font-size: 19px">Un particulier (véhicule, déménagement)</h3><p style="margin: 0 0 12px; color: #5B636E; font-size: 15px">Nous vous expliquons la procédure, étape par étape.</p><span style="color: #1F6FA8; font-weight: 600">Le guide particulier →</span></a>
-<a href="#" style="background: #FFFFFF; border-radius: 12px; padding: 28px; text-decoration: none; color: #2B2F36; border: 1px solid #E3E7EB"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1F6FA8" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"></path></svg><h3 style="margin: 12px 0 6px; font-size: 19px">A foreign partner or supplier</h3><p style="margin: 0 0 12px; color: #5B636E; font-size: 15px">Your reliable customs and logistics agent in Abidjan.</p><span style="color: #1F6FA8; font-weight: 600">English version →</span></a>
+<a href="bientot.html" style="background: #FFFFFF; border-radius: 12px; padding: 28px; overflow: hidden; text-decoration: none; color: #2B2F36; border: 1px solid #E3E7EB"><img src="img/port-entrepots.jpg" alt="Entrepôts et camions au port" loading="lazy" style="display: block; width: calc(100% + 56px); max-width: none; margin: -28px -28px 16px; height: 170px; object-fit: cover"><h3 style="margin: 12px 0 6px; font-size: 19px">🏢 Une entreprise qui importe ou exporte</h3><p style="margin: 0 0 12px; color: #5B636E; font-size: 15px">Dédouanement rapide, sans pénalité, avec un suivi par dossier.</p><span style="color: #1F6FA8; font-weight: 600">Nos services entreprises →</span></a>
+<a href="bientot.html" style="background: #FFFFFF; border-radius: 12px; padding: 28px; overflow: hidden; text-decoration: none; color: #2B2F36; border: 1px solid #E3E7EB"><img src="img/chargement.jpg" alt="Chargement d'un conteneur" loading="lazy" style="display: block; width: calc(100% + 56px); max-width: none; margin: -28px -28px 16px; height: 170px; object-fit: cover"><h3 style="margin: 12px 0 6px; font-size: 19px">🏠 Un particulier (véhicule, déménagement)</h3><p style="margin: 0 0 12px; color: #5B636E; font-size: 15px">Nous vous expliquons la procédure, étape par étape.</p><span style="color: #1F6FA8; font-weight: 600">Le guide particulier →</span></a>
+<a href="bientot.html" style="background: #FFFFFF; border-radius: 12px; padding: 28px; overflow: hidden; text-decoration: none; color: #2B2F36; border: 1px solid #E3E7EB"><img src="img/porte-conteneurs.jpg" alt="Container ship at berth" loading="lazy" style="display: block; width: calc(100% + 56px); max-width: none; margin: -28px -28px 16px; height: 170px; object-fit: cover"><h3 style="margin: 12px 0 6px; font-size: 19px">🌍 A foreign partner or supplier</h3><p style="margin: 0 0 12px; color: #5B636E; font-size: 15px">Your reliable customs and logistics agent in Abidjan.</p><span style="color: #1F6FA8; font-weight: 600">English version →</span></a>
 </div>
 </section>
 
-<section style="background: #FFFFFF">
+<section id="a-propos" style="background: #FFFFFF; max-width: none; margin: 0; padding: 80px max(24px, calc((100% - 1192px) / 2)); display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<img src="img/abidjan-plateau.jpg" alt="Le Plateau, quartier d'affaires d'Abidjan, vu de nuit" loading="lazy" style="flex: 1 1 440px; min-width: 0; width: 100%; height: 380px; object-fit: cover; border-radius: 12px">
+<div style="flex: 1 1 440px">
+<p style="margin: 0 0 8px; color: #1F6FA8; font-weight: 700; font-size: 14px; letter-spacing: 2px; text-transform: uppercase">Qui sommes-nous</p>
+<h2 style="margin: 0 0 16px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 44px; line-height: 1.05; text-transform: uppercase">Un partenaire local, à quelques minutes du port d'Abidjan</h2>
+<p style="margin: 0 0 20px; color: #5B636E">IKTS est commissionnaire agréé en douane, installé à Marcory. Nous accompagnons importateurs, exportateurs et particuliers, de la formalité douanière jusqu'à la livraison.</p>
+<ul style="margin: 0 0 24px; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px">
+<li>✅ <strong>Agréé en douane</strong> — agrément n° [à compléter]</li>
+<li>👤 <strong>Un interlocuteur dédié</strong> pour chaque dossier</li>
+<li>🚚 <strong>Une flotte propre</strong> : remorques, plateaux, porte-char, auto-chargeuse</li>
+<li>🤝 <strong>« La synergie des vainqueurs »</strong> : notre engagement envers chaque client</li>
+</ul>
+<a href="bientot.html?p=Qui%20sommes-nous" style="font-weight: 600; text-decoration: none">En savoir plus sur IKTS →</a>
+</div>
+</section>
+<section id="documents" style="background: #FFFFFF">
 <div style="max-width: 1240px; margin: 0 auto; padding: 80px 24px; display: flex; flex-wrap: wrap; gap: 48px">
 <div style="flex: 1 1 360px">
-<h2 style="margin: 0 0 12px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 40px; text-transform: uppercase">Quels documents préparer ?</h2>
+<h2 style="margin: 0 0 12px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 40px; text-transform: uppercase">📄 Quels documents préparer&nbsp;?</h2>
 <p style="margin: 0 0 24px; color: #5B636E">Choisissez votre opération : la liste s'affiche.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 8px">
 <button type="button" class="op" data-op="import" style="padding:10px 18px;border-radius:999px;font:inherit;font-weight:600;cursor:pointer;border:2px solid #1F6FA8">Import</button>
@@ -101,28 +149,42 @@ a{color:#1F6FA8}a:hover{color:#1B4F8A}
 <div style="flex: 1 1 520px; background: #F3F5F7; border-radius: 12px; padding: 28px">
 <ul style="margin: 0 0 20px; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px" id="docs">
 </ul>
-<a href="#" style="font-weight: 600">Télécharger la checklist complète (PDF) →</a>
+<a href="bientot.html?p=Checklist%20des%20documents%20(PDF)" style="font-weight: 600">Télécharger la checklist complète (PDF) →</a>
 </div>
 </div>
 </section>
 
-<section style="max-width: 1240px; margin: 0 auto; padding: 80px 24px; display: flex; flex-wrap: wrap; gap: 48px">
+<section id="faq" style="max-width: 1240px; margin: 0 auto; padding: 80px 24px; display: flex; flex-wrap: wrap; gap: 48px">
 <div style="flex: 1 1 520px">
-<h2 style="margin: 0 0 24px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 40px; text-transform: uppercase">Questions fréquentes</h2>
+<h2 style="margin: 0 0 24px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 40px; text-transform: uppercase">❓ Questions fréquentes</h2>
 <details style="background: #FFFFFF; border-radius: 10px; padding: 18px 20px; margin-bottom: 10px" open><summary style="font-weight: 600; cursor: pointer">Combien de temps prend un dédouanement ?</summary><p style="margin: 10px 0 0; color: #5B636E">[Délai moyen à fournir par IKTS, selon le circuit.]</p></details>
 <details style="background: #FFFFFF; border-radius: 10px; padding: 18px 20px; margin-bottom: 10px"><summary style="font-weight: 600; cursor: pointer">Comment sont calculés les droits et taxes ?</summary><p style="margin: 10px 0 0; color: #5B636E">[Réponse à rédiger.]</p></details>
 <details style="background: #FFFFFF; border-radius: 10px; padding: 18px 20px; margin-bottom: 10px"><summary style="font-weight: 600; cursor: pointer">Pouvez-vous récupérer ma marchandise chez mon fournisseur à l'étranger ?</summary><p style="margin: 10px 0 0; color: #5B636E">Oui, via notre réseau agréé de partenaires.</p></details>
 <details style="background: #FFFFFF; border-radius: 10px; padding: 18px 20px"><summary style="font-weight: 600; cursor: pointer">Livrez-vous hors d'Abidjan ?</summary><p style="margin: 10px 0 0; color: #5B636E">Oui, partout en Côte d'Ivoire et dans la zone CEDEAO.</p></details>
 </div>
-<div style="flex: 1 1 360px; background: #1B4F8A; color: #FFFFFF; border-radius: 16px; padding: 32px; align-self: flex-start">
+<div id="suivi" style="flex: 1 1 360px; background: #1B4F8A; color: #FFFFFF; border-radius: 16px; padding: 32px; align-self: flex-start">
 <p style="margin: 0 0 8px; font-size: 13px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #CFE4F5">Bientôt · V2</p>
-<h3 style="margin: 0 0 12px; font-family: 'Barlow Condensed', sans-serif; font-size: 32px; text-transform: uppercase">Suivre mon dossier</h3>
+<h3 style="margin: 0 0 12px; font-family: 'Barlow Condensed', sans-serif; font-size: 32px; text-transform: uppercase">📦 Suivre mon dossier</h3>
 <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">Numéro de dossier<input type="text" placeholder="IKTS-2026-0001" style="padding: 12px; border: 0; border-radius: 8px; font: inherit; font-weight: 400"></label>
 <p style="margin: 12px 0 0; font-size: 14px; color: #CFE4F5">Reçu → Déclaré → En circuit → Libéré → Livré</p>
 </div>
 </section>
 
-<section style="background: #FFFFFF; border-top: 1px solid #E3E7EB">
+<section id="contact" style="max-width: 1240px; margin: 0 auto; padding: 80px 24px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
+<div style="flex: 1 1 380px">
+<h2 style="margin: 0 0 16px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 40px; text-transform: uppercase">Venez nous voir</h2>
+<ul style="margin: 0 0 24px; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px">
+<li>📍 <strong>Immeuble Dunes, 1er étage</strong>, Marcory carrefour Solibra, Abidjan</li>
+<li>🕗 Lundi au vendredi, 8h00–17h30</li>
+<li>📞 <a href="tel:+2252721246494">+225 27 21 24 64 94</a> · 📱 <a href="tel:+2250142188484">+225 01 42 18 84 84</a></li>
+<li>💬 Permanence WhatsApp : <a href="https://wa.me/2250778784938">07 78 78 49 38</a></li>
+<li>✉️ <a href="mailto:commercial@ikts.net">commercial@ikts.net</a></li>
+</ul>
+<a href="#devis" style="display: inline-block; background: #1F6FA8; color: #FFFFFF; text-decoration: none; padding: 14px 24px; border-radius: 999px; font-weight: 600">Demander un devis</a>
+</div>
+<div style="flex: 1 1 520px"><iframe title="Plan d'accès IKTS, Marcory carrefour Solibra" src="https://maps.google.com/maps?q=Carrefour%20Solibra%2C%20Marcory%2C%20Abidjan&amp;z=15&amp;output=embed" loading="lazy" style="width: 100%; height: 300px; border: 0; border-radius: 8px"></iframe></div>
+</section>
+<section id="references" style="background: #FFFFFF; border-top: 1px solid #E3E7EB">
 <div style="max-width: 1240px; margin: 0 auto; padding: 48px 24px">
 <p style="margin: 0 0 20px; text-align: center; font-size: 14px; font-weight: 600; color: #5B636E; text-transform: uppercase; letter-spacing: 2px">Ils nous font confiance</p>
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px 40px; font-weight: 700; font-size: 20px; color: #5B636E">
@@ -138,6 +200,7 @@ a{color:#1F6FA8}a:hover{color:#1B4F8A}
 <div><strong style="color: #FFFFFF">Nous trouver</strong><p style="margin: 8px 0 0">Marcory carrefour Solibra<br>Immeuble Dunes, 1er étage<br>30 BP 1011 Abidjan 30</p></div>
 <div><strong style="color: #FFFFFF">Légal</strong><p style="margin: 8px 0 0">Mentions légales<br>Confidentialité · Cookies</p></div>
 </div>
+<div style="text-align: center; padding: 14px 16px 24px; font-size: 12px; color: #AEB8C3">Photos d'illustration (Wikimedia Commons, licences libres) — <a href="credits.html" style="color: inherit">crédits photos</a>. Elles seront remplacées par les photos réelles d'IKTS.</div>
 </footer>
 </div>
 <script>
@@ -157,6 +220,9 @@ ul.innerHTML=docs[k].map(function(d){return '<li style="background:#FFFFFF;borde
 ops.forEach(function(b){b.addEventListener('click',function(){show(b.dataset.op);});});
 show('import');
 })();
+</script>
+<script>
+document.querySelectorAll('#menu a').forEach(function(a){a.addEventListener('click',function(){var n=document.getElementById('menu');if(n.classList.contains('open')){n.classList.remove('open');document.querySelector('.menu-btn').setAttribute('aria-expanded','false');}});});
 </script>
 </body>
 </html>
